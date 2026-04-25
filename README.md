@@ -1,3 +1,2 @@
 # ML-project
-fuck omar
-fuck sisi
+Ahmed -> Prepocessing,  Trained and predicted Decission Tree and Random Forest Regressors
