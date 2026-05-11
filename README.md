@@ -67,3 +67,28 @@ Confusion matrix visualized
 Final trained model was saved as a .pkl file for reuse.
 
 ibrahim hafez done #
+
+Ahmed and Romeo-> 
+# Multi-Model EPL Match Predictor
+
+## What It Does
+Trains 7 models on EPL match statistics to predict Full Time Result (H/D/A), compares them in one table, then combines them into a Voting Ensemble.
+
+## Features Used (17 total)
+Raw: HomeShots, AwayShots, HomeShotsOnTarget, AwayShotsOnTarget, HomeCorners, AwayCorners, HomeFouls, AwayFouls, HomeYellowCards, AwayYellowCards, HomeRedCards, AwayRedCards
+Engineered: ShotDiff, ShotOnTargetDiff, CornerDiff, FoulDiff, YellowDiff
+
+## Models & Results
+
+| Model               | Train  | Test   | CV-5   | Gap    |
+|---------------------|--------|--------|--------|--------|
+| Logistic Regression | 54.29% | 55.33% | 52.81% | -1.04% |
+| Random Forest       | 57.41% | 52.24% | 50.15% |  5.17% |
+| Gradient Boosting   | 59.90% | 60.18% | 55.82% | -0.28% |
+| XGBoost             | 61.99% | 59.38% | 55.64% |  2.61% |
+| SVM                 | 55.62% | 56.29% | 52.96% | -0.67% |
+| Decision Tree       | 52.43% | 50.48% | 46.50% |  1.95% |
+| CatBoost            | 56.24% | 57.57% | 53.64% | -1.33% |
+| Voting Ensemble     | 60.02% | 59.38% |   —    |  0.64% |
+
+Best model: Gradient Boosting — 60.18% test accuracy
