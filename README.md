@@ -89,6 +89,6 @@ Engineered: ShotDiff, ShotOnTargetDiff, CornerDiff, FoulDiff, YellowDiff
 | SVM                 | 55.62% | 56.29% | 52.96% | -0.67% |
 | Decision Tree       | 52.43% | 50.48% | 46.50% |  1.95% |
 | CatBoost            | 56.24% | 57.57% | 53.64% | -1.33% |
-| Voting Ensemble     | 60.02% | 59.38% |   —    |  0.64% |
+
 
 Best model: Gradient Boosting — 60.18% test accuracy
