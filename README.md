@@ -90,5 +90,3 @@ Engineered: ShotDiff, ShotOnTargetDiff, CornerDiff, FoulDiff, YellowDiff
 | Decision Tree       | 52.43% | 50.48% | 46.50% |  1.95% |
 | CatBoost            | 56.24% | 57.57% | 53.64% | -1.33% |
 
-
-Best model: Gradient Boosting — 60.18% test accuracy
